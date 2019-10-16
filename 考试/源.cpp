@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <vector>
 #include <algorithm>
 using namespace std;
 int main()
@@ -19,7 +18,6 @@ int main()
 	sort(a,a+n);
 	int len = unique(a, a + n) - a;
 	if (k < len)cout << a[k - 1];
-
 	return 0;
 }
 
