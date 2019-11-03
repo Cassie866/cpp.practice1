@@ -22,7 +22,8 @@ int main()
 			for (int j = 0; j <= sum; j++) 
 			{
 				dp[i][j] = dp[i - 1][j];
-				if (j >= a[i - 1]) dp[i][j] += dp[i - 1][j - a[i - 1]];
+				if (j >= a[i - 1]) 
+					dp[i][j] += dp[i - 1][j - a[i - 1]];
 			}
 		}
 		cout << dp[n][sum] << endl;

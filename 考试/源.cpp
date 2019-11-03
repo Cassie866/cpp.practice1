@@ -17,7 +17,8 @@ int main()
 	cin >> k;
 	sort(a,a+n);
 	int len = unique(a, a + n) - a;
-	if (k < len)cout << a[k - 1];
+	if (k < len)
+		cout << a[k - 1];
 	return 0;
 }
 
